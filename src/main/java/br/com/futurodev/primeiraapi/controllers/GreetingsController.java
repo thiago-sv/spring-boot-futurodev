@@ -31,7 +31,7 @@ public class GreetingsController {
         return "Hello " + name + "!";
     }
 
-    @GetMapping(value = "/mostarnome/{nome}")
+    @GetMapping(value = "/mostrarnome/{nome}")
     @ResponseStatus(HttpStatus.OK)
     public String mostrarnome(@PathVariable String nome){
         return "Ola "+nome;
